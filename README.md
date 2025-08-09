@@ -1,4 +1,4 @@
-🌟 Overview
+## 🌟 Overview
 
 PreyFinderX is a fully automated, end-to-end bioinformatics pipeline that takes raw sequencing reads and transforms them into clean, ready-to-use taxonomic identifications without the need for manual processing or complicated intermediate steps. Built specifically for dietary analysis and ecological research, it is optimized to handle both 16S rRNA for bacterial and microbiome profiling, and 12S rRNA for vertebrate metabarcoding, making it ideal for studies ranging from gut microbiome assessments to predator–prey investigations.
 
@@ -12,7 +12,7 @@ With PreyFinderX, you bring just three things:
 
 From there, the pipeline takes care of everything like demultiplexing, trimming, quality control, OTU clustering, BLAST annotation, and taxonomic assignment, producing a neatly organized taxonomy table that is immediately ready for ecological interpretation, dietary composition summaries, or statistical analysis.
 
-🥗 Built for Dietary Studies
+## 🥗 Built for Dietary Studies
 
 Whether you’re identifying fish in a seal’s diet, tracking insect prey in bat guano, or profiling a gut microbiome, PreyFinderX delivers:
 
@@ -22,7 +22,7 @@ Whether you’re identifying fish in a seal’s diet, tracking insect prey in ba
 
   3.  Organized results by sample for easy downstream processing
 
-Why PreyFinderX Stands Out
+## Why PreyFinderX Stands Out
 
 ✅ True one-command automation — no juggling 10 different tools
 ✅ Dual capability — 16S & 12S metabarcoding in one pipeline
@@ -30,7 +30,7 @@ Why PreyFinderX Stands Out
 ✅ Direct NCBI integration — always works with up-to-date databases
 ✅ Reproducible structure — consistent output folders for every run
 
-⚙️ Workflow Overview
+## ⚙️ Workflow Overview
 
 The pipeline is built around two scripts:
 🎛️ run_pipeline.sh — Your control panel
@@ -54,7 +54,7 @@ Step	Description	Icon
 🔟 Top-hit filtering	Keeps only the best match per OTU	🏆
 1️⃣1️⃣ Taxonomy assignment	Converts BLAST hits into species names	📖
 
-📂 File & Folder Structure
+## 📂 File & Folder Structure
 
 After running the pipeline, your results will be organized as follows:
 
@@ -86,7 +86,7 @@ PreyFinderX/
 └── README.md
 
 
-🧪 Testing the Pipeline
+## 🧪 Testing the Pipeline
 
 To help you get started quickly and verify that everything is working correctly, the repository includes a Test/ folder containing example input data and expected output files.
 
@@ -105,7 +105,7 @@ From the root directory, simply run:
 ./testrun_pipeline.sh
 
 
-⚙️ Requirements
+## ⚙️ Requirements
    
    1. seqkit — FASTA/FASTQ manipulation
 
@@ -134,7 +134,7 @@ nano metatrimx/run_pipeline.sh
 ./run_pipeline.sh config/primers_tags.txt data/raw/ results/
 
 
-📜 License
+## 📜 License
 
 PreyFinderX is licensed under the MIT License — free to use, modify, and share. Contributions and improvements are always welcome!
 👥 Contributors
@@ -144,4 +144,5 @@ Subramaniam Vijayakumar
 
 📧 Email: subramanyamvkumar@gmail.com
 🔗 GitHub: SUBRAMANIAM96
+
 
