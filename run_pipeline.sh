@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # === USER CONFIGURATION ===
-file_path="/mnt/c/Users/User/Downloads/wolf_tutorial"
-forward_read="${file_path}/wolf_F.fastq"
-reverse_read="${file_path}/wolf_R.fastq"
+file_path="/path/to/your/data"
+forward_read="${file_path}/forward read .fastq"
+reverse_read="${file_path}/reverse read .fastq"
 
 quality_cutoff=20
 min_length=50
@@ -14,9 +14,9 @@ declare -A reverse_primers
 declare -A sample_tags
 
 # Sample: wolfdiet_13a_F730603
-forward_primers["wolfdiet_13a_F730603"]="TTAGATACCCCACTATGC"
-reverse_primers["wolfdiet_13a_F730603"]="TAGAACAGGCTCCTCTAG"
-sample_tags["wolfdiet_13a_F730603"]="aattaac"
+forward_primers["SampleA"]="TTAGATACCCCACTATGC"
+reverse_primers["SampleA"]="TAGAACAGGCTCCTCTAG"
+sample_tags["SampleA"]="aattaac"
 
 # === TOOL CHECK ===
 for tool in cutadapt bash Rscript python3 vsearch seqtk blastn; do
@@ -36,7 +36,7 @@ fi
 
 # === CORE SCRIPT LOCATION CHECK ===
 script_dir="$(dirname "$0")"
-core_script="/mnt/c/Users/User/Downloads/PreyFinderX/core/Monotrim.sh"
+core_script="{File_path}/PreyFinderX/core/Monotrim.sh"
 
 if [[ ! -f "$core_script" ]]; then
     echo " Error: Core processing script not found at $core_script"
@@ -69,4 +69,4 @@ for sample in "${!forward_primers[@]}"; do
     fi
 done
 
-echo -e " All samples processed. Check the 'results' folder."
+echo -e " PreyFinderX processed. Check the 'results' folder."

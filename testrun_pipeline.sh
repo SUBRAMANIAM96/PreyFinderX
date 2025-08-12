@@ -69,4 +69,4 @@ for sample in "${!forward_primers[@]}"; do
     fi
 done
 
-echo -e " All samples processed. Check the 'results' folder."
+echo -e " PreyFinderX processed. Check the 'results' folder."
