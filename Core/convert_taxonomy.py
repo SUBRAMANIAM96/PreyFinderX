@@ -65,10 +65,10 @@ def process_blast_output(file_path):
                         processed_lines.add(new_line)
                     time.sleep(5)
 
-    print(f"✅ Taxonomy output saved to: {output_file_path}")
+    print(f" Taxonomy output saved to: {output_file_path}")
 
 # Run
 if os.path.isfile(input_file_path):
     process_blast_output(input_file_path)
 else:
-    print(f"❌ Input file not found: {input_file_path}")
+    print(f" Input file not found: {input_file_path}")
